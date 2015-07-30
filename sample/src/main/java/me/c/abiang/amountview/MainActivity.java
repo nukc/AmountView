@@ -1,17 +1,24 @@
 package me.c.abiang.amountview;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import me.c.abiang.AmountView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity implements AmountView.OnAmountChangeListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AmountView mAmountView = (AmountView) findViewById(R.id.amountView);
+        mAmountView.setListener(this);
+        mAmountView.setGoods_storage(100);
     }
 
     @Override
@@ -34,5 +41,10 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onAmountChange(int amount) {
+        Toast.makeText(getApplicationContext(), amount + "", Toast.LENGTH_SHORT).show();
     }
 }
