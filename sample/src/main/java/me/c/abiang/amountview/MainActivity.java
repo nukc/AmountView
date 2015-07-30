@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements AmountView.OnAmou
 
         AmountView mAmountView = (AmountView) findViewById(R.id.amountView);
         mAmountView.setListener(this);
-        mAmountView.setGoods_storage(100);
+        mAmountView.setGoods_storage(10);
     }
 
     @Override
