@@ -92,13 +92,13 @@ public class AmountView extends LinearLayout implements View.OnClickListener {
         }
 
         if(mListener != null) {
-            mListener.onAmountChange(amount);
+            mListener.onAmountChange(this, amount);
         }
     }
 
 
     public interface OnAmountChangeListener{
-        void onAmountChange(int amount);
+        void onAmountChange(View view, int amount);
     }
 
 }

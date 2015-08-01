@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import me.c.abiang.AmountView;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements AmountView.OnAmou
     }
 
     @Override
-    public void onAmountChange(int amount) {
+    public void onAmountChange(View view, int amount) {
         Toast.makeText(getApplicationContext(), amount + "", Toast.LENGTH_SHORT).show();
     }
 }
