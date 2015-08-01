@@ -72,10 +72,6 @@ public class AmountView extends LinearLayout implements View.OnClickListener {
         this.goods_storage = goods_storage;
     }
 
-    public int getGoods_storage() {
-        return goods_storage;
-    }
-
     @Override
     public void onClick(View v) {
         int i = v.getId();
