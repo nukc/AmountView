@@ -1,4 +1,4 @@
-package me.c.abiang;
+package com.github.nukc.amountview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import me.c.abiang.library.R;
 
 /**
  * 自定义组件：购买数量，带减少增加按钮
@@ -46,6 +44,7 @@ public class AmountView extends LinearLayout implements View.OnClickListener {
         int tvWidth = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AmountView_tvWidth, 80);
         int tvTextSize = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AmountView_tvTextSize, 0);
         int btnTextSize = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AmountView_btnTextSize, 0);
+        obtainStyledAttributes.recycle();
 
         LayoutParams btnParams = new LayoutParams(btnWidth, LayoutParams.MATCH_PARENT);
         btnDecrease.setLayoutParams(btnParams);
@@ -60,8 +59,6 @@ public class AmountView extends LinearLayout implements View.OnClickListener {
         if (tvTextSize != 0) {
             tvAmount.setTextSize(tvTextSize);
         }
-
-        obtainStyledAttributes.recycle();
     }
 
     public void setListener(Object object){

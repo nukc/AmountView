@@ -1,4 +1,4 @@
-package me.c.abiang.library;
+package com.github.nukc.sample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

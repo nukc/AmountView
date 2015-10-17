@@ -1,4 +1,4 @@
-package me.c.abiang.amountview;
+package com.github.nukc.library;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

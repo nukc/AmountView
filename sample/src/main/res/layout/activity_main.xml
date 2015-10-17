@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <me.c.abiang.AmountView
+    <com.github.nukc.amountview.AmountView
         android:id="@+id/amountView"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
