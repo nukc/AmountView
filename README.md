@@ -36,9 +36,9 @@
     ```
     
     
-##Custom Attribute
+## Custom Attribute
 
-    ```xml
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <resources>
         <declare-styleable name="AmountView">
@@ -51,7 +51,7 @@
             <attr name="btnTextSize" format="dimension"/>
         </declare-styleable>
     </resources>
-    ```
+```
     
 ## License
 
